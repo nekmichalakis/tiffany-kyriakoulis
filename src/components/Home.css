@@ -1,8 +1,6 @@
 .mainContainer {
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    width: 100%;
+    position: relative;
+    min-height: 100vh;
 }
 
 .topSection {
@@ -12,7 +10,7 @@
     background-size: cover;
     background-position: center;
     /* box-shadow: inset 0 0 0 2000px rgba(100, 78, 64, 0.2); */
-    box-shadow: inset 0 0 0 2000px rgba(1, 120, 152, 0.2);
+    box-shadow: inset 0 0 0 2000px rgba(50, 74, 100, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +50,7 @@
 
 .secondSection {
     height: 93vh;
-    background-color: #ECEAE4;
+    background-color: #fbf9fc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +69,7 @@
     width: 28rem;
     height: 28rem;
     border-radius: 50%;
-    box-shadow: -3.8rem 2.5rem 0 3px #FCB9AA;
+    box-shadow: -3.8rem 2.5rem 0 3px #b692ca;
 }
 
 .secondTextBox {
@@ -94,7 +92,7 @@
 
 .thirdSection {
     height: 70vh;
-    background-color: #FCB9AA;
+    background-color: #b692ca;
     
 }
 
@@ -122,4 +120,76 @@
     font-size: 4rem;
     text-align: center;
     padding-top: 2rem;
+}
+
+.fourthSection {
+    height: 100vh;
+    background-color: #fbf9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.fourthTextBox {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 25%;
+}
+
+.fourthTitle {
+    font-size: 3.4rem;
+    line-height: 1.3;
+}
+
+.fourthUnder {
+    width: 90%;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: dimgray;
+}
+
+.fourthImg {
+    background-image: url('../assets//fourth.jpg');
+    width: 24%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3.8rem 2.5rem 0 3px #d8c5e3;
+}
+
+.fourthButton {
+    color: white;
+    background-color: #8850a6;
+    padding: 1.2rem 2rem;
+    width: max-content;
+    margin-left: 4rem;
+}
+
+.callToAction {
+    height: 62vh;
+    background-color: #6d4184;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.callTitle {
+    font-size: 3.2rem;
+    color: white;
+}
+
+.callUnder {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.callButton {
+    background-color: #d8c5e3;
+    padding: 1.2rem 2.3rem;
+    margin-top: 3rem;
 }

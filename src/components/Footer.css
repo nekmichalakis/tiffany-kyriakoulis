@@ -1,0 +1,27 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 4rem;
+    background-color: #fbf9fc;
+    padding-bottom: 7rem;
+}
+
+.footerTitle {
+    font-size: 2.6rem;
+    padding-bottom: 2rem;
+}
+
+.mailPhone {
+    font-size: 1.2rem;
+    color: dimgray;
+}
+
+.credits {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 2rem;
+    background-color: #efe7f4;
+    color: dimgray;
+}
