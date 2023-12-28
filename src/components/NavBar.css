@@ -1,0 +1,37 @@
+.nav {
+    padding: 4rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    position: relative;
+    color: white;
+}
+
+.logo {
+    color: inherit;
+    font-size: 2rem;
+}
+
+.navBar {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navItem {
+    color: inherit;
+    font-size: 1.1rem;
+}
+
+.buttonNav {
+    display: inline-block;
+    background-color: #C9CAB4;
+    padding: 1rem 2.2rem;
+    font-size: 0.9rem;
+    transition: all 200ms ease;
+    color: black;
+}
+
+.buttonNav:hover {
+    background-color: #C4C5AC;
+}

@@ -1,0 +1,125 @@
+.mainContainer {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+.topSection {
+    height: 100vh;
+    background: url('../assets/back3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: inset 0 0 0 2000px rgba(100, 78, 64, 0.2); */
+    box-shadow: inset 0 0 0 2000px rgba(1, 120, 152, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+    padding-left: 20rem;
+    padding-right: 23rem;
+    padding-top: 10rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #C9CAB4;
+    padding: 1.1rem 2.2rem;
+    font-size: 0.9rem;
+    transition: all 200ms ease;
+}
+
+.button:hover {
+    background-color: #C4C5AC;
+}
+
+.overTitle {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.title {
+    color: white;
+    font-size: 3.8rem;
+}
+
+.bookButton {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.secondSection {
+    height: 93vh;
+    background-color: #ECEAE4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondBox {
+    display: flex;
+    gap: 7rem;
+}
+
+.secondImage {
+    background-image: url('../assets/face.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    box-shadow: -3.8rem 2.5rem 0 3px #FCB9AA;
+}
+
+.secondTextBox {
+    width: 29rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.secondTitle {
+    font-size: 3.2rem;
+    margin-top: 1.5rem;
+}
+
+.secondUnder {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: dimgray;
+}
+
+.thirdSection {
+    height: 70vh;
+    background-color: #FCB9AA;
+    
+}
+
+.thirdTextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 25%;
+    gap: 40px;
+}
+
+.thirdTitle {
+    font-size: 3.2rem;
+}
+
+.thirdUnder {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: dimgray;
+}
+
+.sliderBox {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+}
