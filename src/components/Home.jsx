@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './Home.css'
 
@@ -7,10 +8,12 @@ const Home = () => {
     <div className='mainContainer'>
 
       <section className='topSection'>
-        <div className="overTitle">YOUR TOP SEO KEYWORDS & LOCATION GO HERE</div>
-        <div className="title">The short and compelling client-centered headline can go right here.</div>
-        <div className="buttonContainer">
-            <div className="button bookButton">BOOK A SESSION</div>
+        <div className="topContainer">
+          <div className="overTitle">YOUR TOP SEO KEYWORDS & LOCATION GO HERE</div>
+          <div className="title">The short and compelling client-centered headline can go right here.</div>
+          <div className="buttonContainer">
+              <Link to='/contact' className="button bookButton">BOOK A SESSION</Link>
+          </div>
         </div>
       </section>
 

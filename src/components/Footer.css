@@ -4,7 +4,6 @@
     align-items: center;
     gap: 1rem;
     padding-top: 4rem;
-    background-color: #fbf9fc;
     padding-bottom: 7rem;
 }
 
@@ -21,7 +20,7 @@
 .credits {
     text-align: center;
     font-size: 1.1rem;
-    padding: 2rem;
-    background-color: #efe7f4;
+    padding: 2.5rem;
+    background-color: var(--clr-light);
     color: dimgray;
 }
