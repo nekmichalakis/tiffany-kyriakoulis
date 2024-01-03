@@ -18,6 +18,8 @@
     padding-left: 20rem;
     padding-right: 23rem;
     padding-top: 10rem; */
+    display: flex;
+    justify-content: center;
 }
 
 .topContainer {
@@ -27,6 +29,8 @@
     gap: 3.5rem;
     max-width: 70rem;
     margin: auto;
+    padding: 1rem;
+    padding-top: 10rem;
 }
 
 .overTitle {
@@ -59,27 +63,34 @@
 
 .secondSection {
     min-height: 93vh;
-    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.secondBox {
+.secondContainer {
     max-width: 80rem;
     display: flex;
     gap: 7rem;
+    padding: 1rem;
+}
+
+.secondImageContainer {
+    /* background-image: url('../assets/face.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    max-width: 28rem;
+    max-height: 28rem;
+    border-radius: 50%;
+    box-shadow: -3.8rem 2.5rem 0 3px var(--clr-dark);
+    overflow: hidden;
 }
 
 .secondImage {
-    background-image: url('../assets/face.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 28rem;
-    height: 28rem;
-    border-radius: 50%;
-    box-shadow: -3.8rem 2.5rem 0 3px var(--clr-dark);
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
 }
 
 .secondTextBox {
@@ -103,17 +114,19 @@
 .thirdSection {
     min-height: 70vh;
     background-color: var(--clr-dark);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.thirdTextBox {
+.thirdContainer {
     display: flex;
+    max-width: 65rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    margin: 0 25%;
     gap: 3.5rem;
+    padding: 1rem;
 }
 
 .thirdTitle {
@@ -137,15 +150,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7rem;
-    padding: 2rem;
+    
+}
+
+.fourthContainer {
+    display: flex;
+    max-width: 70rem;
+    gap: 6rem;
+    padding: 1rem;
 }
 
 .fourthTextBox {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 25%;
+    max-width: 30rem;
+    
 }
 
 .fourthTitle {
@@ -160,15 +180,23 @@
     color: dimgray;
 }
 
-.fourthImg {
-    background-image: url('../assets//fourth.jpg');
-    max-width: 24rem;
-    width: 100%;
-    height: 40rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.fourthImgContainer {
+    max-height: 42rem;
+    max-width: 28rem;
+    /* max-height: 40rem; */
     box-shadow: 3.8rem 2.5rem 0 3px var(--clr-light);
+}
+
+.fourthImg {
+    /* background-image: url('../assets//fourth.jpg'); */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* max-height: 40rem; */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    /* box-shadow: 3.8rem 2.5rem 0 3px var(--clr-light); */
 }
 
 .fourthButton {
@@ -181,6 +209,7 @@
 
 .callToAction {
     min-height: 62vh;
+    padding: 1rem;
     background-color: var(--clr-superdark);
     display: flex;
     flex-direction: column;
@@ -192,15 +221,38 @@
 .callTitle {
     font-size: 3.2rem;
     color: white;
+    text-align: center;
 }
 
 .callUnder {
     color: white;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .callButton {
     background-color: var(--clr-light);
     padding: 1.2rem 2.3rem;
     margin-top: 3rem;
+}
+
+
+
+@media only screen and (max-width: 65rem) {
+
+    .secondContainer {
+            max-width: 80rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            padding: 1rem;
+        }
+    
+    .fourthContainer {
+            display: flex;
+            flex-direction: column-reverse;
+            max-width: 70rem;
+            gap: 3rem;
+            padding: 1rem;
+        }
 }
