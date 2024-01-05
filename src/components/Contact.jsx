@@ -17,8 +17,8 @@ const Contact = () => {
       </section>
 
       <section className="contactMap">
-        <div className="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.6875344983223!2d23.908277212193497!3d37.750474113441285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1edabef3bee31%3A0x6cd642474798b825!2sPosidonos%2021%2C%20Saronida%20190%2013!5e0!3m2!1sen!2sgr!4v1703782897050!5m2!1sen!2sgr" width="900" height="500" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <div className="mapContainer">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.6875344983223!2d23.908277212193497!3d37.750474113441285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1edabef3bee31%3A0x6cd642474798b825!2sPosidonos%2021%2C%20Saronida%20190%2013!5e0!3m2!1sen!2sgr!4v1703782897050!5m2!1sen!2sgr" style={{border:0}} allowFullScreen="" loading="lazy" className='map' referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div className="mapInfo">
           <div className="myOffice">My office</div>
