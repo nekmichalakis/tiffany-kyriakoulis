@@ -12,8 +12,8 @@ const Contact = () => {
       <section className="contactInfo">
         <div className="contactTitle">Contact Info</div>
         <div className="contactUnder">I do my best to respond within two business days.</div>
-        <div className="mailPhone">email@example.com</div>
-        <div className="mailPhone">(555) 555-5555</div>
+        <p>email@example.com</p>
+        <p>(555) 555-5555</p>
       </section>
 
       <section className="contactMap">
@@ -22,11 +22,11 @@ const Contact = () => {
         </div>
         <div className="mapInfo">
           <div className="myOffice">My office</div>
-          <div className="mailPhone">Posidonos 21</div>
-          <div className="mailPhone">Saronida, GR 19013</div>
+          <p>Posidonos 21</p>
+          <p>Saronida, GR 19013</p>
           <div className="hours">Hours</div>
-          <div className="mailPhone">Monday-Friday</div>
-          <div className="mailPhone">10am-6pm</div>
+          <p>Monday-Friday</p>
+          <p>10am-6pm</p>
         </div>
       </section>
     </div>

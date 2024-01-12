@@ -4,20 +4,12 @@
 
 .topSection {
     min-height: 100vh;
-    /* max-width: 100vw; */
     background: url('../assets/back3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /* box-shadow: inset 0 0 0 2000px rgba(100, 78, 64, 0.2); */
     box-shadow: inset 0 0 0 2000px rgba(50, 74, 100, 0.3);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3.5rem;
-    padding-left: 20rem;
-    padding-right: 23rem;
-    padding-top: 10rem; */
     display: flex;
     justify-content: center;
 }
@@ -39,7 +31,7 @@
 
 .title {
     color: white;
-    font-size: clamp(3rem, 5vw, 3.8rem);
+    font-size: clamp(2.8rem, 5vw, 3.8rem);
 }
 
 .button {
@@ -95,14 +87,7 @@
 }
 
 .secondTitle {
-    font-size: 3.2rem;
     margin-top: 1.5rem;
-}
-
-.secondUnder {
-    font-size: 1.2rem;
-    line-height: 2;
-    color: dimgray;
 }
 
 .thirdSection {
@@ -125,12 +110,6 @@
 
 .thirdTitle {
     font-size: 3.2rem;
-}
-
-.thirdUnder {
-    font-size: 1.1rem;
-    line-height: 2;
-    color: dimgray;
 }
 
 .sliderBox {
@@ -159,38 +138,22 @@
     flex-direction: column;
     gap: 3rem;
     max-width: 30rem;
-    
-}
-
-.fourthTitle {
-    font-size: 3.4rem;
-    line-height: 1.3;
 }
 
 .fourthUnder {
     width: 90%;
-    font-size: 1.2rem;
-    line-height: 2;
-    color: dimgray;
 }
 
 .fourthImgContainer {
     max-height: 42rem;
     max-width: 28rem;
-    /* max-height: 40rem; */
     box-shadow: 3.8rem 2.5rem 0 3px var(--clr-light);
 }
 
 .fourthImg {
-    /* background-image: url('../assets//fourth.jpg'); */
     object-fit: cover;
     width: 100%;
     height: 100%;
-    /* max-height: 40rem; */
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    /* box-shadow: 3.8rem 2.5rem 0 3px var(--clr-light); */
 }
 
 .fourthButton {
@@ -213,14 +176,12 @@
 }
 
 .callTitle {
-    font-size: 3.2rem;
-    color: white;
     text-align: center;
+    color: white;
 }
 
 .callUnder {
     color: white;
-    font-size: 1.1rem;
     text-align: center;
 }
 

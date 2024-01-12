@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import faceImg from '../assets/faceSquare.jpg'
 import fourthImg from '../assets/fourth.jpg'
@@ -7,6 +8,8 @@ import fourthImg from '../assets/fourth.jpg'
 import './Home.css'
 
 const Home = () => {
+  const [t, i18n] = useTranslation('global')
+
   return (
     <div className='mainContainer'>
 
@@ -26,20 +29,20 @@ const Home = () => {
               <img src={faceImg} alt="face" className='secondImage' />
             </div>
             <div className="secondTextBox">
-                <div className="secondTitle">An empathic client-centered statement.</div>
-                <div className="secondUnder">Engage your audience broadly, but enough so that they click for more details. Use “You” statements instead of “I” statements or passive language (e.g.  instead of “people who feel…” say “you feel”). </div>
+                <h2 className="secondTitle">An empathic client-centered statement.</h2>
+                <p>{t('home.part1')}</p>
             </div>
         </div>
       </section>
 
       <section className='thirdSection'>
         <div className="thirdContainer">
-            <div className="thirdTitle">
+            <h2>
               Ideally, you want to work something in with your keywords in a heading two size, towards the top.
-            </div>
-            <div className="thirdUnder">
+            </h2>
+            <p>
               Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-            </div>
+            </p>
           <div className="sliderBox">
             ❁
           </div>
@@ -49,12 +52,12 @@ const Home = () => {
       <section className='fourthSection'>
         <div className="fourthContainer">
           <div className="fourthTextBox">
-            <div className="fourthTitle">
+            <h2>
               Here is where you put a short blurb to introduce yourself to your reader.
-            </div>
-            <div className="fourthUnder">
+            </h2>
+            <p className="fourthUnder">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </div>
+            </p>
             <div className="fourthButton">
               MORE ABOUT ME
             </div>
@@ -66,12 +69,12 @@ const Home = () => {
       </section>
 
       <section className="callToAction">
-        <div className="callTitle">
+        <h2 className="callTitle">
           Your “call-to-action.” will go here.
-        </div>
-        <div className="callUnder">
+        </h2>
+        <p className='callUnder'>
           A simple statement that tells the reader what you’d like them to do. 
-        </div>
+        </p>
         <div className="callButton">GET IN TOUCH</div>
       </section>
 

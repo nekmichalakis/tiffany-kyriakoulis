@@ -7,12 +7,12 @@ const Footer = () => {
     <>
     <div className='footerContainer'>
         <div className="footerTitle">Your Name & Credentials</div>
-        <div className="mailPhone">email@example.com</div>
-        <div className="mailPhone">(555) 555-5555</div>
+        <p>email@example.com</p>
+        <p>(555) 555-5555</p>
     </div>
-    <div className="credits">
+    <p className="credits">
         © 2023 Your Business Name, LLC. All rights reserved.
-    </div>
+    </p>
     </>
   )
 }

@@ -14,15 +14,8 @@
     text-align: center;
 }
 
-.mailPhone {
-    font-size: 1.2rem;
-    color: dimgray;
-}
-
 .credits {
     text-align: center;
-    font-size: 1.1rem;
     padding: 2.5rem;
     background-color: var(--clr-light);
-    color: dimgray;
 }
