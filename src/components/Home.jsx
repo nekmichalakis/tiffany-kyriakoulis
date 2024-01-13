@@ -30,7 +30,7 @@ const Home = () => {
             </div>
             <div className="secondTextBox">
                 <h2 className="secondTitle">An empathic client-centered statement.</h2>
-                <p>{t('home.part1')}</p>
+                <p>{t('home.part2')}</p>
             </div>
         </div>
       </section>
@@ -41,7 +41,7 @@ const Home = () => {
               Ideally, you want to work something in with your keywords in a heading two size, towards the top.
             </h2>
             <p>
-              Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+              {t('home.part3')}
             </p>
           <div className="sliderBox">
             ❁
@@ -56,7 +56,7 @@ const Home = () => {
               Here is where you put a short blurb to introduce yourself to your reader.
             </h2>
             <p className="fourthUnder">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              {t('home.part1')}
             </p>
             <div className="fourthButton">
               MORE ABOUT ME
@@ -73,7 +73,7 @@ const Home = () => {
           Your “call-to-action.” will go here.
         </h2>
         <p className='callUnder'>
-          A simple statement that tells the reader what you’d like them to do. 
+          A simple statement that tells the reader what you'd like them to do. 
         </p>
         <div className="callButton">GET IN TOUCH</div>
       </section>

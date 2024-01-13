@@ -57,6 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: var(--clr-yellow); */
 }
 
 .secondContainer {
@@ -123,7 +124,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: var(--clr-yellow);
 }
 
 .fourthContainer {

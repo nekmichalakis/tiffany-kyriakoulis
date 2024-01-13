@@ -1,17 +1,20 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 import './Footer.css'
 
 const Footer = () => {
+  const [t, i18n] = useTranslation('global')
+
   return (
     <>
     <div className='footerContainer'>
-        <div className="footerTitle">Your Name & Credentials</div>
-        <p>email@example.com</p>
-        <p>(555) 555-5555</p>
+        <div className="footerTitle">{t('footer.nameCredentials')}</div>
+        <p>{t('footer.email')}</p>
+        <p>{t('footer.phone')}</p>
     </div>
     <p className="credits">
-        © 2023 Your Business Name, LLC. All rights reserved.
+        {t('footer.footNote')}
     </p>
     </>
   )
