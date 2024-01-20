@@ -9,7 +9,7 @@
 .aboutContainer {
     max-width: 70rem;
     padding: 1rem;
-    padding-top: 18rem;
+    padding-top: 12rem;
     padding-bottom: 6rem;
     gap: 6rem;
     display: flex;
@@ -31,6 +31,12 @@
     padding: 1.2rem 2rem;
     width: max-content;
     margin-left: 4rem;
+    transition: all 200ms ease;
+}
+
+.aboutButton:hover {
+    background-color: var(--clr-superdark);
+    color: white;
 }
 
 .aboutImgContainer {
@@ -69,9 +75,15 @@
         max-width: 70rem;
         gap: 3rem;
         padding: 8rem 1rem;
+        text-align: center;
     }
 
     .aboutSecond {
         margin: 1rem;
+        text-align: center;
+    }
+
+    .aboutButton {
+        margin-left: 0;
     }
 }

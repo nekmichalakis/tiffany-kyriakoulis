@@ -3,11 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/back3.jpg');
+    /* background-image: url('../assets/back3.jpg'); */
+    background-image: url('../assets/Tiffany-8.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
     font-size: clamp(4rem, 8vw, 7rem);
     color: white;
     box-shadow: inset 0 0 0 2000px rgba(50, 74, 100, 0.3);
-    background-position: bottom;
+    /* background-position: bottom; */
     padding: 1rem;
     text-align: center;
 }
@@ -21,7 +25,8 @@
     background-color: #fbf9fc;
     gap: 1.5rem;
     padding: 1rem;
-    background-color: var(--clr-yellow);
+    background-color: var(--clr-whiteish);
+    text-align: center;
 }
 
 .contactTitle {
@@ -54,6 +59,7 @@
 
     position: relative;
     padding-bottom: 35%;
+    margin-top: 3rem;
     height: 0;
 }
 
@@ -93,5 +99,6 @@
     .mapContainer {
         max-width: 90vw;
         padding-bottom: 45%;
+        padding-top: -3rem;
     }
 }

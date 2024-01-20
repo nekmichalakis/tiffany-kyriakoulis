@@ -4,7 +4,8 @@
 
 .topSection {
     min-height: 100vh;
-    background: url('../assets/back3.jpg');
+    /* background: url('../assets/back3.jpg'); */
+    background: url('../assets/Tiffany-11.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,7 +44,7 @@
 }
 
 .button:hover {
-    background-color: #C4C5AC;
+    background-color: #a4a67f;
 }
 
 .bookButton {
@@ -107,6 +108,7 @@
     align-items: center;
     gap: 3.5rem;
     padding: 1rem;
+    padding-top: 3rem;
 }
 
 .thirdTitle {
@@ -124,7 +126,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--clr-yellow);
+    background-color: var(--clr-whiteish);
 }
 
 .fourthContainer {
@@ -163,6 +165,12 @@
     padding: 1.2rem 2rem;
     width: max-content;
     margin-left: 4rem;
+    transition: all 200ms ease;
+}
+
+.fourthButton:hover {
+    background-color: var(--clr-dark);
+    color: var(--clr-superdark);
 }
 
 .callToAction {
@@ -190,25 +198,54 @@
     background-color: var(--clr-light);
     padding: 1.2rem 2.3rem;
     margin-top: 3rem;
+    transition: all 200ms ease;
+}
+
+.callButton:hover {
+    background-color: var(--clr-whiteish);
 }
 
 
 
 @media only screen and (max-width: 65rem) {
 
+    .mainContainer {
+        text-align: center;
+    }
+
+    .topSection {
+        padding-bottom: 5rem;
+    }
+
     .secondContainer {
-            max-width: 80rem;
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            padding: 1rem;
-        }
-    
+        max-width: 80rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 4rem 1rem;
+    }
+
+    .thirdContainer {
+        padding: 4rem 1rem;
+    }
+
     .fourthContainer {
-            display: flex;
-            flex-direction: column-reverse;
-            max-width: 70rem;
-            gap: 3rem;
-            padding: 1rem;
-        }
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 70rem;
+        gap: 5rem;
+        padding: 4rem 1rem ;
+    }
+
+    .fourthTextBox {
+        align-items: center;
+    }
+
+    .fourthUnder {
+        width: 100%;
+    }
+
+    .fourthButton {
+        margin-left: 0;
+    }
 }

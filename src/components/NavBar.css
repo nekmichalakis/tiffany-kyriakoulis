@@ -42,7 +42,7 @@
 }
 
 .buttonNav:hover {
-    background-color: #C4C5AC;
+    background-color: #a4a67f;
 }
 
 .toggleButton {
@@ -79,7 +79,7 @@
     .navBar {
         display: none;
         flex-direction: column;
-        margin: 9rem 0;
+        margin: 58% 0;
     }
 
     .navBarOpen {
