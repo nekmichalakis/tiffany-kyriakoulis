@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <div className="footerContainer">
         <Fade>
-          <div className="footerTitle">{t("footer.nameCredentials")}</div>
+          <h2 className="footerTitle">{t("footer.nameCredentials")}</h2>
         </Fade>
         <Fade delay={300}>
           <p>{t("footer.email")}</p>

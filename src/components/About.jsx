@@ -2,9 +2,6 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { Fade } from 'react-awesome-reveal'
 
-import Tiffany1 from '../assets/Tiffany.jpg'
-import Tiffany8 from '../assets/Tiffany-8.jpg'
-import Tiffany9 from '../assets/Tiffany-9.jpg'
 import Tiffany11 from '../assets/Tiffany-11.jpg'
 
 import './About.css'
@@ -17,16 +14,8 @@ const About = () => {
       <section className="aboutSection">
         <div className="aboutContainer">
           <div className="textContainer">
-            <Fade>
-              <div className="overAbout">
-                Your name and credentials can go here.
-              </div>
-            </Fade>
-            <Fade>
-              <h2>{t("about.welcome")}</h2>
-            </Fade>
             <Fade delay={300}>
-              <p>{t("about.story4")}</p>
+              <h3>{t("about.story4")}</h3>
               <Link
                 to="/contact"
                 className="aboutButton"

@@ -9,7 +9,7 @@
 .aboutContainer {
     max-width: 70rem;
     padding: 1rem;
-    padding-top: 12rem;
+    padding-top: 10rem;
     padding-bottom: 6rem;
     gap: 6rem;
     display: flex;
@@ -18,12 +18,9 @@
 .textContainer {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
     max-width: 30rem;
-}
-
-.overAbout {
-    font-size: clamp(0.8rem, 2vw, 1.3rem);
+    margin-top: 4rem;
 }
 
 .aboutButton {
@@ -65,7 +62,7 @@
     padding: 5rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 @media only screen and (max-width: 65rem) {
@@ -74,7 +71,7 @@
         flex-direction: column;
         max-width: 70rem;
         gap: 3rem;
-        padding: 8rem 1rem;
+        padding: 5rem 1rem;
         text-align: center;
     }
 

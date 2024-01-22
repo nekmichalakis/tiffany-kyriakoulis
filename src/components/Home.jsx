@@ -2,13 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-awesome-reveal";
 
-import faceImg from "../assets/faceSquare.jpg";
-import fourthImg from "../assets/fourth.jpg";
-
 import Tiffany1 from "../assets/Tiffany.jpg";
-import Tiffany8 from "../assets/Tiffany-8.jpg";
-import Tiffany9 from "../assets/Tiffany-9.jpg";
-import Tiffany11 from "../assets/Tiffany-11.jpg";
 import Tiffany12 from "../assets/Tiffany-12.jpg";
 
 import "./Home.css";
@@ -59,13 +53,8 @@ const Home = () => {
             </div>
           </Fade>
           <div className="secondTextBox">
-            <Fade>
-              <h2 className="secondTitle">
-                An empathic client-centered statement.
-              </h2>
-            </Fade>
             <Fade delay={300}>
-              <p>{t("home.part2")}</p>
+              <h3>{t("home.part2")}</h3>
             </Fade>
           </div>
         </div>
@@ -74,14 +63,13 @@ const Home = () => {
       <section className="thirdSection">
         <div className="thirdContainer">
           <Fade>
-            <h2>
-              Ideally, you want to work something in with your keywords in a
-              heading two size, towards the top.
-            </h2>
+            <h3>{t("home.part31")}</h3>
           </Fade>
           <Fade delay={300}>
-            <p>{t("home.part3")}</p>
-            <div className="sliderBox">❁</div>
+            <h4>{t("home.part32")}</h4>
+          </Fade>
+          <Fade delay={800}>
+            <h2 className="sliderBox">❁</h2>
           </Fade>
         </div>
       </section>
@@ -89,16 +77,10 @@ const Home = () => {
       <section className="fourthSection">
         <div className="fourthContainer">
           <div className="fourthTextBox">
-            <Fade>
-              <h2>
-                Here is where you put a short blurb to introduce yourself to
-                your reader.
-              </h2>
+            <Fade delay={300}>
+              <h3>{t("home.part1")}</h3>
             </Fade>
             <Fade delay={300}>
-              <p className="fourthUnder">{t("home.part1")}</p>
-            </Fade>
-            <Fade>
               <Link
                 to="/about"
                 className="fourthButton"
@@ -116,7 +98,7 @@ const Home = () => {
           </div>
           <Fade>
             <div className="fourthImgContainer">
-              <img src={Tiffany1} alt="fourth" className="fourthImg" />
+              <img src={Tiffany1} className="fourthImg" />
             </div>
           </Fade>
         </div>

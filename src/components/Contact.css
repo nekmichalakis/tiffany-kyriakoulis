@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url('../assets/back3.jpg'); */
     background-image: url('../assets/Tiffany-8.jpg');
     background-repeat: no-repeat;
     background-size: auto;
@@ -11,9 +10,13 @@
     font-size: clamp(4rem, 8vw, 7rem);
     color: white;
     box-shadow: inset 0 0 0 2000px rgba(50, 74, 100, 0.3);
-    /* background-position: bottom; */
     padding: 1rem;
     text-align: center;
+}
+
+.contactGetin {
+    font-size: clamp(3rem, 8vw, 7rem);
+    color: white;
 }
 
 .contactInfo {
@@ -38,44 +41,26 @@
     margin: 1rem;
 }
 
-.contactMap {
-    min-height: 70vh;
+.contactThird {
     background-color: #efe7f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    gap: 5rem;
+    padding: 1rem;
 }
 
-.mapContainer {
-    max-width: 55vw;
-    width: 100%;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-
-    position: relative;
-    padding-bottom: 35%;
-    margin-top: 3rem;
-    height: 0;
+.contactImgContainer {
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    max-width: 70rem;
+    box-shadow: 3.8rem 2.5rem 0 3px var(--clr-dark);
 }
 
-.map {
-    position: absolute;
-    top: 0;
-    left: 0;
+.contactImg {
+    object-fit: cover;
     width: 100%;
+    max-width: 100%;
     height: 100%;
-    max-height: 60vh;
-}
-
-.mapInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 .myOffice {
@@ -90,15 +75,9 @@
 }
 
 @media only screen and (max-width: 60rem) {
-
-    .contactMap{
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .mapContainer {
-        max-width: 90vw;
-        padding-bottom: 45%;
-        padding-top: -3rem;
+    .contactImgContainer {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        box-shadow: 1.8rem 1.5rem 0 3px var(--clr-dark);
     }
 }
