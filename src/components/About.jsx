@@ -45,13 +45,13 @@ const About = () => {
             <h2>{t("about.story")}</h2>
           </Fade>
           <Fade delay={300}>
-            <p>{t("about.story1")}</p>
+            <p className="aboutText">{t("about.story1")}</p>
           </Fade>
           <Fade delay={300}>
-            <p>{t("about.story2")}</p>
+            <p className="aboutText">{t("about.story2")}</p>
           </Fade>
           <Fade delay={300}>
-            <p>{t("about.story3")}</p>
+            <p className="aboutText">{t("about.story3")}</p>
           </Fade>
         </div>
       </section>
