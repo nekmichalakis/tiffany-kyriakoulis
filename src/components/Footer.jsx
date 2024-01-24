@@ -10,14 +10,17 @@ const Footer = () => {
     <>
       <div className="footerContainer">
         <Fade>
-          <h2 className="footerTitle">{t("footer.nameCredentials")}</h2>
+          <h2 className="footerTitle">{t("footer.name")}</h2>
+        </Fade>
+        <Fade>
+          <h3 className="footerTitle">{t("footer.credentials")}</h3>
         </Fade>
         <Fade delay={300}>
           <p>{t("footer.email")}</p>
-          <p>{t("footer.phone")}</p>
+          <p className='credits'>{t("footer.phone")}</p>
+          <p>{t("footer.location")}</p>
         </Fade>
       </div>
-      <p className="credits">{t("footer.footNote")}</p>
     </>
   );
 }

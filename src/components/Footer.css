@@ -5,7 +5,7 @@
     gap: 1rem;
     padding: 1rem;
     padding-top: 4rem;
-    padding-bottom: 7rem;
+    padding-bottom: 4rem;
 }
 
 .footerTitle {
@@ -15,6 +15,4 @@
 
 .credits {
     text-align: center;
-    padding: 2.5rem;
-    background-color: var(--clr-light);
 }

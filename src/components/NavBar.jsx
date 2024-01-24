@@ -11,6 +11,7 @@ const NavBar = () => {
 
   const handleLng = () => {
     i18n.changeLanguage(i18n.language === "en" ? 'gr' : 'en')
+    setMenuOpen(false);
   }
 
   return (

@@ -18,19 +18,19 @@
     flex-direction: column;
     justify-content: center;
     gap: 3.5rem;
-    max-width: 70rem;
+    max-width: 71rem;
     padding: 1rem;
     padding-top: 10rem;
 }
 
 .overTitle {
     color: white;
-    font-size: clamp(0.8rem, 2vw, 1.3rem);
+    font-size: clamp(0.7rem, 2vw, 1rem);
 }
 
 .title {
     color: white;
-    font-size: clamp(2.8rem, 5vw, 3.8rem);
+    font-size: clamp(2.1rem, 5vw, 3.8rem);
 }
 
 .button {
@@ -232,5 +232,9 @@
 
     .fourthButton {
         margin-left: 0;
+    }
+
+    .callToAction {
+        padding-bottom: 2rem;
     }
 }

@@ -15,15 +15,10 @@ const Home = () => {
       <section className="topSection">
         <div className="topContainer">
           <Fade>
-            <div className="overTitle">
-              YOUR TOP SEO KEYWORDS & LOCATION GO HERE
-            </div>
+            <div className="overTitle">{t("header.overMain")}</div>
           </Fade>
           <Fade delay={300}>
-            <div className="title">
-              The short and compelling client-centered headline can go right
-              here.
-            </div>
+            <div className="title">{t("header.main")}</div>
           </Fade>
           <Fade>
             <div className="buttonContainer">
@@ -38,7 +33,7 @@ const Home = () => {
                   });
                 }}
               >
-                BOOK A SESSION
+                {t("header.headButton")}
               </Link>
             </div>
           </Fade>
@@ -92,7 +87,7 @@ const Home = () => {
                   });
                 }}
               >
-                MORE ABOUT ME
+                {t("home.more")}
               </Link>
             </Fade>
           </div>
@@ -106,13 +101,10 @@ const Home = () => {
 
       <section className="callToAction">
         <Fade>
-          <h2 className="callTitle">Your “call-to-action.” will go here.</h2>
+          <h2 className="callTitle">{t("header.cta1")}</h2>
         </Fade>
         <Fade delay={300}>
-          <p className="callUnder">
-            A simple statement that tells the reader what you&apos;d like them
-            to do.
-          </p>
+          <p className="callUnder">{t("header.cta2")}</p>
         </Fade>
         <Fade delay={300}>
           <Link
@@ -126,7 +118,7 @@ const Home = () => {
               });
             }}
           >
-            GET IN TOUCH
+            {t("header.ctaButton")}
           </Link>
         </Fade>
       </section>

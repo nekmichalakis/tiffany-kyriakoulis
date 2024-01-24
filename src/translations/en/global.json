@@ -1,14 +1,21 @@
 {
     "header": {
         "name": "Tiffany Kyriakoulis",
+        "overMain": "ONLINE SESSIONS IN ENGLISH OR GREEK",
+        "main": "Bi-lingual, bi-cultural Psychologist / Systemic Psychotherapist-in-training based in Anavyssos, Greece",
+        "headButton": "BOOK A SESSION",
         "about": "ABOUT ME",
-        "getIn": "GET IN TOUCH"
+        "getIn": "GET IN TOUCH",
+        "cta1": "Take that step. Make today the day.",
+        "cta2": "Feel free to contact me for any queries or clarifications.",
+        "ctaButton": "GET IN TOUCH"
     },
     "home": {
         "part1": "I am a certified culturally-sensitive therapist and you can speak to me in confidence whilst I listen empathically without passing any judgement.",
         "part2": "My aim is to help you improve your functionality so your desires can be materialized, new experiences attempted and your life lived to the fullest.",
         "part31": "Here is a safe place, where an alliance will be formed so any difficulties you may be facing can be explored and their origins better understood.",
-        "part32": "Together, we can figure out the best way to bring about change and move forward. "
+        "part32": "Together, we can figure out the best way to bring about change and move forward.",
+        "more": "MORE ABOUT ME"
     },
     "about": {
         "welcome": "Welcome!",
@@ -31,9 +38,11 @@
         "hours2": "10am-6pm"
     },
     "footer": {
-        "nameCredentials": "Your Name & Credentials",
-        "email": "email@example.com",
-        "phone": "(555) 555-5555",
+        "name": "Tiffany Kyriakoulis",
+        "credentials": "Psychologist / trainee Systemic Psychotherapist",
+        "email": "ynafette@hotmail.com",
+        "phone": "00306978893314 (Viber & WhatsApp)",
+        "location": "Anavyssos",
         "footNote": "© 2023 Your Business Name, LLC. All rights reserved."
     }
 }
