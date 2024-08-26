@@ -20,6 +20,11 @@ const Footer = () => {
           <p className='credits'>{t("footer.phone")}</p>
           <p>{t("footer.location")}</p>
         </Fade>
+        <Fade delay={300}>
+          <a href="https://www.onlinetherapy.com" target="_blank" rel="noreferrer"><img
+              src="https://www.onlinetherapy.com/wp-content/uploads/2021/01/black-background-member.png?x75948"
+              width="200" alt="Online Therapy"/></a>
+        </Fade>
       </div>
     </>
   );
