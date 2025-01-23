@@ -23,7 +23,7 @@ const Contact = () => {
             <Fade delay={300}>
                 <p>{t("footer.email")}</p>
                 <p>{t("footer.phone")}</p>
-                <p>{t('or')}</p>
+                <p>{t("contact.or")}</p>
             </Fade>
             <Fade>
                 <div className="contactTitle">{t("contact.visitOffice")}</div>
