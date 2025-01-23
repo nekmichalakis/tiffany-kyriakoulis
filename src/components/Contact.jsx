@@ -23,13 +23,21 @@ const Contact = () => {
         <Fade delay={300}>
           <p>{t("footer.email")}</p>
           <p>{t("footer.phone")}</p>
+            <p>{t('or')}</p>
         </Fade>
+          <Fade>
+              <div className="contactTitle">{t("contact.visitOffice")}</div>
+          </Fade>
+          <Fade delay={300}>
+              <p>{t("contact.address1")}</p>
+              <p>{t("contact.address2")}</p>
+          </Fade>
       </section>
 
       <section className="contactThird">
         <Fade>
           <div className="contactImgContainer">
-            <img src={Tiffany9} className="contactImg" />
+            <img src={Tiffany9} className="contactImg" alt={"contact image"} />
           </div>
         </Fade>
       </section>

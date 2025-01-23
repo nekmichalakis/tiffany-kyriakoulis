@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useCallback, useState} from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
@@ -9,10 +9,11 @@ const NavBar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const handleLng = () => {
+  const handleLng = useCallback((e) => {
+    e.preventDefault();
     i18n.changeLanguage(i18n.language === "en" ? 'gr' : 'en')
     setMenuOpen(false);
-  }
+  }, [i18n])
 
   return (
     <nav>
@@ -29,7 +30,7 @@ const NavBar = () => {
           <span className={menuOpen ? "barOpen bar" : "bar"}></span>
         </a>
         <div className={menuOpen ? "navBar navBarOpen" : "navBar"}>
-          <a href="#" className="langToggle" onClick={() => handleLng()}>
+          <a href="#" className="langToggle" onClick={(e) => handleLng(e)}>
             {i18n.language === "en" ? "ΕΛΛΗΝΙΚΑ" : "ENGLISH"}
           </a>
           <Link

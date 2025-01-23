@@ -35,14 +35,18 @@
         "addr2": "Saronida, GR 19013",
         "hours": "Hours",
         "hours1": "Monday-Friday",
-        "hours2": "10am-6pm"
+        "hours2": "10am-6pm",
+        "address1": "Nikolaou Dede 34",
+        "address2": "Palea Fokea, Attica",
+        "visitOffice": "Visit the office",
+        "or": "or"
     },
     "footer": {
         "name": "Tiffany Kyriakoulis",
         "credentials": "Psychologist / trainee Systemic Psychotherapist",
         "email": "ynafette@hotmail.com",
         "phone": "00306978893314 (Viber & WhatsApp)",
-        "location": "Anavyssos",
+        "location": "Nikolaou Dede 34 Palea Fokea 19013",
         "footNote": "© 2023 Your Business Name, LLC. All rights reserved."
     }
 }

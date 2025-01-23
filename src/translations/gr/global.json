@@ -34,14 +34,18 @@
         "addr2": "Σαρωνίδα, GR 19013",
         "hours": "Ωράριο",
         "hours1": "Δευτέρα-Παρασκευή",
-        "hours2": "10πμ-6μμ"
+        "hours2": "10πμ-6μμ",
+        "address1": "Νικολάου Δέδε 34",
+        "address2": "Παλαιά Φώκαια, Αττική",
+        "visitOffice": "Επίσκεφθείτε το γραφείο",
+        "or": "ή"
     },
     "footer": {
         "name": "Τίφανυ Κυριακούλη",
         "credentials": "Ψυχολόγος / ειδικευόμενη Συστημική Ψυχοθεραπεύτρια",
         "email": "ynafette@hotmail.com",
         "phone": "00306978893314 (Viber & WhatsApp)",
-        "location": "Ανάβυσσος",
+        "location": "Νικολάου Δέδε 34 Παλαία Φωκαία 19013",
         "footNote": "© 2023 Your Business Name, LLC. All rights reserved."
     }
 }
