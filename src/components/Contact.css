@@ -25,7 +25,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fbf9fc;
     gap: 1.5rem;
     padding: 1rem;
     background-color: var(--clr-whiteish);
@@ -73,11 +72,22 @@
     font-weight: bold;
     margin-top: 2rem;
 }
+.iframeContainer {
+    width: 50vw;
+    height: 60vh;
+    margin-bottom: 1rem;
+}
+
 
 @media only screen and (max-width: 60rem) {
     .contactImgContainer {
         margin-top: 0;
         margin-bottom: 2rem;
         box-shadow: 1.8rem 1.5rem 0 3px var(--clr-dark);
+    }
+    .iframeContainer {
+        width: 80vw;
+        height: 50vh;
+        margin-bottom: 1rem;
     }
 }
