@@ -55,6 +55,13 @@
     box-shadow: 3.8rem 2.5rem 0 3px var(--clr-dark);
 }
 
+.carouselContainer {
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    max-width: 30rem;
+    box-shadow: 2.5rem 2rem 0 3px var(--clr-light);
+}
+
 .contactImg {
     object-fit: cover;
     width: 100%;
@@ -84,6 +91,12 @@
         margin-top: 0;
         margin-bottom: 2rem;
         box-shadow: 1.8rem 1.5rem 0 3px var(--clr-dark);
+    }
+    .carouselContainer {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        width: 80vw;
+        box-shadow: 2.5rem 2rem 0 3px var(--clr-light);
     }
     .iframeContainer {
         width: 80vw;

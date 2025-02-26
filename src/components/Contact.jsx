@@ -1,7 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-awesome-reveal";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 import Tiffany9 from "../assets/Tiffany-9.jpg";
+import office1 from "../assets/office1.jpeg";
+import office2 from "../assets/office2.jpeg";
+import office3 from "../assets/office3.jpeg";
 
 import "./Contact.css";
 
@@ -28,6 +33,20 @@ const Contact = () => {
             <Fade>
                 <div className="contactTitle">{t("contact.visitOffice")}</div>
             </Fade>
+
+            <div className="carouselContainer">
+                <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} showStatus={false} interval={5000}>
+                    <div>
+                        <img src={office1} className="contactImg" alt={"contact image"}/>
+                    </div>
+                    <div>
+                        <img src={office2} className="contactImg" alt={"contact image"}/>
+                    </div>
+                    <div>
+                        <img src={office3} className="contactImg" alt={"contact image"}/>
+                    </div>
+                </Carousel>
+            </div>
             <div className={'iframeContainer'}>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.08563762339!2d23.94436057575251!3d37.71766767199981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1edf0c7ff5a21%3A0x970b75c7e306b8bf!2sNik.%20Dede%2034%2C%20Palea%20Fokea%20190%2013!5e0!3m2!1sen!2sgr!4v1737624311056!5m2!1sen!2sgr"
