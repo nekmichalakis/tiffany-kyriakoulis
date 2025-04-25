@@ -19,6 +19,7 @@ const Footer = () => {
           <p>{t("footer.email")}</p>
           <p className='credits'>{t("footer.phone")}</p>
           <p>{t("footer.location")}</p>
+          <p>{t("footer.secondLocation")}</p>
         </Fade>
         <Fade delay={300}>
           <a href="https://www.onlinetherapy.com" target="_blank" rel="noreferrer"><img

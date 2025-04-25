@@ -84,6 +84,33 @@
     height: 60vh;
     margin-bottom: 1rem;
 }
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.mapButton {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    background-color: var(--clr-light);
+    border: none;
+    border-radius: 5px;
+    transition: all 200ms ease;
+}
+.mapButton:hover {
+    background-color: var(--clr-dark);
+}
+.mapButtonSelected {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    background-color: var(--clr-dark);
+    border: none;
+    border-radius: 5px;
+    transition: all 200ms ease;
+}
 
 
 @media only screen and (max-width: 60rem) {
