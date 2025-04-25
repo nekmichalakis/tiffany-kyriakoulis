@@ -39,7 +39,9 @@
         "address1": "Nikolaou Dede 34",
         "address2": "Palea Fokea, Attica",
         "visitOffice": "Visit the office",
-        "or": "or"
+        "or": "or",
+        "anavyssos": "ANAVYSSOS",
+        "voula": "VOULA"
     },
     "footer": {
         "name": "Tiffany Kyriakoulis",

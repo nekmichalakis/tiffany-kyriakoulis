@@ -51,8 +51,8 @@ const Contact = () => {
                 </Carousel>
             </div>
             <div className={'buttonsContainer'}>
-                <button className={map === 'anavyssos' ? 'mapButtonSelected' : 'mapButton'} onClick={() => setMap('anavyssos')}>ANAVYSSOS</button>
-                <button className={map === 'voula' ? 'mapButtonSelected' : 'mapButton'} onClick={() => setMap('voula')}>VOULA</button>
+                <button className={map === 'anavyssos' ? 'mapButtonSelected' : 'mapButton'} onClick={() => setMap('anavyssos')}>{t("contact.anavyssos")}</button>
+                <button className={map === 'voula' ? 'mapButtonSelected' : 'mapButton'} onClick={() => setMap('voula')}>{t("contact.voula")}</button>
             </div>
             {map === 'anavyssos' && <div className={'iframeContainer'}>
                 <iframe
