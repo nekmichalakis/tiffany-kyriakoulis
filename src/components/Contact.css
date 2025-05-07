@@ -57,8 +57,8 @@
 
 .carouselContainer {
     margin-bottom: 5rem;
-    margin-top: 2rem;
-    max-width: 30rem;
+    margin-top: 3rem;
+    max-width: 60rem;
     box-shadow: 2.5rem 2rem 0 3px var(--clr-light);
 }
 
@@ -82,7 +82,7 @@
 .iframeContainer {
     width: 50vw;
     height: 60vh;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .buttonsContainer {
     display: flex;

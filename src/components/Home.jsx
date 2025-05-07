@@ -93,7 +93,7 @@ const Home = () => {
           </div>
           <Fade>
             <div className="fourthImgContainer">
-              <img src={Tiffany1} className="fourthImg" />
+              <img src={Tiffany1} alt={'portrait'} className="fourthImg" />
             </div>
           </Fade>
         </div>

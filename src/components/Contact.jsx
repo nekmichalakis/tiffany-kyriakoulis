@@ -3,10 +3,16 @@ import { Fade } from "react-awesome-reveal";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-import Tiffany9 from "../assets/Tiffany-9.jpg";
-import office1 from "../assets/office1.jpeg";
-import office2 from "../assets/office2.jpeg";
-import office3 from "../assets/office3.jpeg";
+import gallery1 from "../assets/gallery1.jpg";
+import gallery2 from "../assets/gallery2.jpg";
+import gallery3 from "../assets/gallery3.jpg";
+import gallery4 from "../assets/gallery4.jpg";
+import gallery5 from "../assets/gallery5.jpg";
+import gallery6 from "../assets/gallery6.jpg";
+import gallery7 from "../assets/gallery7.jpg";
+import gallery8 from "../assets/gallery8.jpg";
+import gallery9 from "../assets/gallery9.jpg";
+
 
 import "./Contact.css";
 import {useState} from "react";
@@ -15,6 +21,18 @@ const Contact = () => {
   const [t] = useTranslation("global");
 
   const [map, setMap] = useState("anavyssos");
+
+  const galleryImages = [
+        gallery1,
+        gallery2,
+        gallery3,
+        gallery4,
+        gallery5,
+        gallery6,
+        gallery7,
+        gallery8,
+        gallery9,
+  ];
 
   return (
     <div>
@@ -37,19 +55,15 @@ const Contact = () => {
                 <div className="contactTitle">{t("contact.visitOffice")}</div>
             </Fade>
 
-            <div className="carouselContainer">
-                <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} showStatus={false} interval={5000}>
-                    <div>
-                        <img src={office1} className="contactImg" alt={"contact image"}/>
-                    </div>
-                    <div>
-                        <img src={office2} className="contactImg" alt={"contact image"}/>
-                    </div>
-                    <div>
-                        <img src={office3} className="contactImg" alt={"contact image"}/>
-                    </div>
-                </Carousel>
-            </div>
+            {/*<div className="carouselContainer">*/}
+            {/*    <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} showStatus={false} interval={5000}>*/}
+            {/*        {galleryImages.map(image =>*/}
+            {/*            (<div key={image.id}>*/}
+            {/*                <img src={image} className="contactImg" alt={"contact image"}/>*/}
+            {/*            </div>)*/}
+            {/*        )}*/}
+            {/*    </Carousel>*/}
+            {/*</div>*/}
             <div className={'buttonsContainer'}>
                 <button className={map === 'anavyssos' ? 'mapButtonSelected' : 'mapButton'} onClick={() => setMap('anavyssos')}>{t("contact.anavyssos")}</button>
                 <button className={map === 'voula' ? 'mapButtonSelected' : 'mapButton'} onClick={() => setMap('voula')}>{t("contact.voula")}</button>
@@ -72,8 +86,15 @@ const Contact = () => {
 
         <section className="contactThird">
             <Fade>
-                <div className="contactImgContainer">
-                    <img src={Tiffany9} className="contactImg" alt={"contact image"}/>
+                <div className="carouselContainer">
+                    {/*<img src={Tiffany9} className="contactImg" alt={"contact image"}/>*/}
+                    <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} showStatus={false} interval={5000}>
+                        {galleryImages.map(image =>
+                            (<div key={image.id}>
+                                <img src={image} className="contactImg" alt={"contact image"}/>
+                            </div>)
+                        )}
+                    </Carousel>
                 </div>
             </Fade>
         </section>
