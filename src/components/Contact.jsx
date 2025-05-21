@@ -13,6 +13,8 @@ import gallery7 from "../assets/gallery7.jpg";
 import gallery8 from "../assets/gallery8.jpg";
 import gallery9 from "../assets/gallery9.jpg";
 
+import tiffProfile from "../assets/tiffProfile.jpg";
+
 
 import "./Contact.css";
 import {useState} from "react";
@@ -21,6 +23,12 @@ const Contact = () => {
   const [t] = useTranslation("global");
 
   const [map, setMap] = useState("anavyssos");
+  const [imageHeight, setImageHeight] = useState(0);
+
+    const handleImageLoad = (event) => {
+        const height = event.target.offsetHeight;
+        setImageHeight(height);
+    }
 
   const galleryImages = [
         gallery1,
@@ -55,15 +63,6 @@ const Contact = () => {
                 <div className="contactTitle">{t("contact.visitOffice")}</div>
             </Fade>
 
-            {/*<div className="carouselContainer">*/}
-            {/*    <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} showStatus={false} interval={5000}>*/}
-            {/*        {galleryImages.map(image =>*/}
-            {/*            (<div key={image.id}>*/}
-            {/*                <img src={image} className="contactImg" alt={"contact image"}/>*/}
-            {/*            </div>)*/}
-            {/*        )}*/}
-            {/*    </Carousel>*/}
-            {/*</div>*/}
             <div className={'buttonsContainer'}>
                 <button className={map === 'anavyssos' ? 'mapButtonSelected' : 'mapButton'} onClick={() => setMap('anavyssos')}>{t("contact.anavyssos")}</button>
                 <button className={map === 'voula' ? 'mapButtonSelected' : 'mapButton'} onClick={() => setMap('voula')}>{t("contact.voula")}</button>
@@ -87,13 +86,25 @@ const Contact = () => {
         <section className="contactThird">
             <Fade>
                 <div className="carouselContainer">
-                    {/*<img src={Tiffany9} className="contactImg" alt={"contact image"}/>*/}
                     <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} showStatus={false} interval={5000}>
                         {galleryImages.map(image =>
                             (<div key={image.id}>
-                                <img src={image} className="contactImg" alt={"contact image"}/>
+                                <img src={image}
+                                     onLoad={handleImageLoad}
+                                     className="contactImg"
+                                     alt={"contact image"}
+                                />
                             </div>)
                         )}
+                        <div className={'profileContainer'}>
+                            <img src={tiffProfile}
+                                 style={{
+                                    maxHeight: imageHeight,
+                                 }}
+                                 className="tiffProfile"
+                                 alt={"contact image"}
+                            />
+                        </div>
                     </Carousel>
                 </div>
             </Fade>
