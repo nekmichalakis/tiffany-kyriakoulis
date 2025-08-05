@@ -18,7 +18,6 @@ const Footer = () => {
         <Fade delay={300}>
           <p>{t("footer.email")}</p>
           <p className='credits'>{t("footer.phone")}</p>
-          <p>{t("footer.location")}</p>
           <p>{t("footer.secondLocation")}</p>
         </Fade>
         <Fade delay={300}>
