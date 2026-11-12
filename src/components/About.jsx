@@ -48,6 +48,9 @@ const About = () => {
             <p className="aboutText">{t("about.story1")}</p>
           </Fade>
           <Fade delay={300}>
+            <p className="aboutText">{t("about.story1b")}</p>
+          </Fade>
+          <Fade delay={300}>
             <p className="aboutText">{t("about.story2")}</p>
           </Fade>
           <Fade delay={300}>
